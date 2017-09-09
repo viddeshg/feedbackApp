@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <title>Feedback Application</title>
+
+    <style>
+        h6
+        {
+            margin:0;
+        }
+    </style>
+</head>
+<body style="font-family: 'Open Sans', sans-serif;">
+<nav style="background-color: #26a69a; height: 54px; line-height:54px;">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center" style="font-size: 1.5rem;">IT Department Feedback Application</a>
+    </div>
+</nav>
+
+<div class="container" style="margin-top: 40px;">
+    <div class="row">
+        <div class="col m10 s12 offset-m1">
+            <div class="input-field col m6 s12">
+                <input placeholder="Viddesh Gharpure" id="full_name" type="text" class="validate">
+                <label for="full_name">Student's Name</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <input placeholder="85" id="roll_no" type="text" class="validate">
+                <label for="roll_no">Roll Number</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">I-1</option>
+                    <option value="2">I-2</option>
+                    <option value="3">I-3</option>
+                    <option value="4">I-4</option>
+                </select>
+                <label>Select Batch</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Teacher 1</option>
+                    <option value="2">Teacher 2</option>
+                    <option value="3">Teacher 3</option>
+                </select>
+                <label>Select Faculty</label>
+            </div>
+            <div class="col m12 s12" style="margin-top: 40px;">
+                <form action="#">
+                    <h6>1. Teaching Skills</h6><br>
+                    <p class="range-field" style="margin-top: 0px !important; margin-bottom:0px !important;">
+                        <input type="range" id="test2" min="0" max="10" />
+                    </p>
+                    <br>
+
+                    <h6>2. Punctuality</h6><br>
+                    <p class="range-field" style="margin-top: 0px !important; margin-bottom:0px !important;">
+                        <input type="range" id="test3" min="0" max="10" />
+                    </p>
+                    <br>
+
+                    <h6>3. Practical Knowledge</h6><br>
+                    <p class="range-field" style="margin-top: 0px !important; margin-bottom:0px !important;">
+                        <input type="range" id="test4" min="0" max="10" />
+                    </p>
+                    <br>
+
+                    <h6>4. Approachability</h6><br>
+                    <p class="range-field" style="margin-top: 0px !important; margin-bottom:0px !important;">
+                        <input type="range" id="test5" min="0" max="10" />
+                    </p>
+                    <br>
+
+                    <h6>5. Class Control</h6><br>
+                    <p class="range-field" style="margin-top: 0px !important; margin-bottom:0px !important;">
+                        <input type="range" id="test6" min="0" max="10" />
+                    </p>
+                    <br>
+                </form>
+            </div>
+            <div class="center">
+                <button class="btn waves-effect waves-light " type="submit" name="action">Submit
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+
+</script>
+</body>
+</html>
