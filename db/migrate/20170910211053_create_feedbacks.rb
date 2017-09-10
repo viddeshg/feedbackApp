@@ -1,4 +1,4 @@
-class Feedbacks < ActiveRecord::Migration[5.1]
+class CreateFeedbacks < ActiveRecord::Migration[5.1]
   def change
     create_table :feedbacks do |t|
       t.string :sName
