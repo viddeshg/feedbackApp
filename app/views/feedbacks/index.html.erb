@@ -46,7 +46,7 @@
           <div class="input-field col m6 s12">
             <option value="" disabled selected>Choose your option</option>
             <%= f.select :faculty, options_for_select([['Choose your option', disabled: true, selected: true], ['Teacher 1', "Teacher 1"], ['Teacher 2', "Teacher 2"],['Teacher 3', "Teacher 3"],['Teacher 4', "Teacher 4"]],f.object.faculty.to_s)  %>
-            <label>Select Faculty</label>
+            <label>Select Teacher</label>
           </div>
 
           <div class="col m12 s12" style="margin-top: 40px;">
@@ -56,7 +56,7 @@
               </p>
               <br>
 
-              <h6>2. Punctuality</h6><br>
+              <h6>2. Punctuality </h6><br>
               <p class="range-field" style="margin-top: 0px !important; margin-bottom:0px !important;">
                 <%= f.range_field :fb2, :in => 0..10 %>
               </p>
